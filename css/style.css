@@ -1889,6 +1889,36 @@ h1, h2, h3, h4, h5,
 .ftco-testimonial-1 p {
   color: #a2a2a2; }
 
+
+
+.bookAppointment {
+  width: 500px;
+  height: 50px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  background: #5CB7FF;
+  text-align: center;
+  line-height: 50px;
+  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  bottom: -100px; 
+  font-size: 20px;
+  color: #fff;
+  filter: drop-shadow(6px 5px 4px #a2a2a2);
+  border-radius: 5px;
+  }
+  .bookAppointment:hover {
+    color: #000;
+  }
+  .bookAppointment.active {
+    bottom: 60px; }
+
+  .bookAppointment .icon-whatsapp {
+		margin-right: 10px;
+	}
+
 .gototop {
   width: 50px;
   height: 50px;

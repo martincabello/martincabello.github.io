@@ -277,8 +277,10 @@ jQuery(document).ready(function($) {
 
 			if (st > 200) {
   			$('.gototop').addClass('active');
+  			$('.bookAppointment').addClass('active');
   		} else {
   			$('.gototop').removeClass('active');
+  			$('.bookAppointment').removeClass('active');
   		}
 
   	}) 
