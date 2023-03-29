@@ -1556,23 +1556,24 @@
 
 
 .bookAppointment {
-	width: 30%;
+	width: 50%;
 	max-width: 500px;
-	height: 50px;
+	height: fit-content;
+	min-height: 50px;
+	padding: 10px 3%;
 	position: fixed;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 99;
 	background: #5CB7FF;
 	text-align: center;
-	line-height: 50px;
 	-webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
 	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
 	bottom: -100px; 
 	font-size: 20px;
 	color: #fff;
 	filter: drop-shadow(6px 5px 4px #a2a2a2);
-  	border-radius: 5px;
+	border-radius: 5px;
 	&:hover {
 		color: #000;
 	}
