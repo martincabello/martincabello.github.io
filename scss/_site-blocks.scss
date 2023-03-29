@@ -8,6 +8,16 @@
 	background-repeat: no-repeat;
 	background-position: top;
 	background-position: center center;
+	@media screen and (max-width: 499px) {
+		.site-blocks-cover .logo-desktop {
+		  display: none;
+		}
+	  }
+	  @media screen and (min-width: 500px) {
+		.site-blocks-cover .logo-mobile {
+		  display: none;
+		}
+	  }
 	> .container {
 		z-index: 2;
 		position: relative;
