@@ -1565,12 +1565,12 @@ h1, h2, h3, h4, h5,
         padding: 5px;
         color: #fff; }
   .team-member h3 {
-    color: #000;
+    color: #FFFFFF;
     margin: 0;
     bottom: 0;
     font-size: 1.4rem; }
   .team-member .position {
-    color: #000; }
+    color: #FFFFFF; }
   .team-member:hover img {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
