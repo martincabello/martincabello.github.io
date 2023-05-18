@@ -16,7 +16,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
 ////////////////////////////////////////////////////////////////
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <title>Clínica Brelo | Odontología y estética | Concepción</title>
     <meta charset="utf-8">
@@ -63,17 +63,13 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
     
       
       <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-
         <div class="container">
           <div class="row align-items-center">
-            
             <div class="col-6 col-xl-2">
               <h1 class="mb-0 site-logo m-0 p-0"><a href="index.html" class="mb-0"><span><img src="images/logo/brelo-horizontal-black-simple.png" alt="Brelo logo" style="width:90px;"></span></a></h1>
             </div>
-
             <div class="col-12 col-md-10 d-none d-xl-block">
               <nav class="site-navigation position-relative text-right" role="navigation">
-
                 <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                   <li><a href="#home-section" class="nav-link">Inicio</a></li>
                   <li><a href="#services-section-odonto" class="nav-link">Odontología</a></li>
@@ -84,10 +80,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
                 </ul>
               </nav>
             </div>
-
-
             <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white float-right"><span class="icon-menu h3"></span></a></div>
-
           </div>
         </div>
       </header>
@@ -253,7 +246,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
               </figure>
               <div class="p-3 bg-primary">
                 <h3 class="mb-2">Arturo Cabello H.</h3>
-                <span class="position">Cirujano dentista, Universidad de Concepción <br>-<br> Especialidad de Ortodoncia, Universidad de Concepción. Fundador de clínica Brelo.</span>
+                <span class="position">Cirujano dentista, Universidad de Concepción <br>-<br><br> Especialidad de Ortodoncia, Universidad de Concepción. Fundador de clínica Brelo.</span>
               </div>
             </div>
           </div>
@@ -277,7 +270,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
               </figure>
               <div class="p-3 bg-primary">
                 <h3 class="mb-2">Francisco Verdugo A.</h3>
-                <span class="position">Cirujano dentista, Universidad Mayor <br>-<br> Magister en investigación en ingeniería de tejidos y/o medicina regenerativa, Universidad de Manchester.</span>
+                <span class="position">Cirujano dentista, Universidad Mayor <br>-<br><br> Magister en investigación en ingeniería de tejidos y/o medicina regenerativa, Universidad de Manchester.</span>
               </div>
             </div>
           </div>
@@ -309,19 +302,19 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
         <div class="row">
           <div class="col-md-7 mb-5">
 
-            
-            <form action="form.php" method="POST" enctype="text/plain" class="p-5 bg-white">
+            <form id='contact-form' action="form.php" method="POST" class="p-5 bg-white">
               
               <h2 class="h4 text-black mb-5">Déjanos un mensaje</h2> 
 
+              <input type="text" name="password" id="password" style="display:none !important" tabindex="-1" autocomplete="new-password">
               <div class="row form-group">
                 <div class="col-md-6 mb-3 mb-md-0">
                   <label class="text-black" for="fname">Nombre</label>
-                  <input type="text" id="fname" class="form-control">
+                  <input type="text" name="fname" id="fname" class="form-control">
                 </div>
                 <div class="col-md-6">
                   <label class="text-black" for="lname">Apellido</label>
-                  <input type="text" id="lname" class="form-control">
+                  <input type="text" name="lname" id="lname" class="form-control">
                 </div>
               </div>
 
@@ -329,7 +322,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
                 
                 <div class="col-md-12">
                   <label class="text-black" for="email">Email</label> 
-                  <input type="email" id="email" class="form-control">
+                  <input type="email" name="email" id="email" class="form-control">
                 </div>
               </div>
 
@@ -337,7 +330,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
                 
                 <div class="col-md-12">
                   <label class="text-black" for="subject">Asunto</label> 
-                  <input type="subject" id="subject" class="form-control">
+                  <input type="subject" name="subject" id="subject" class="form-control">
                 </div>
               </div>
 
@@ -385,13 +378,11 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
     <footer class="site-footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-8">
-            <div class="row">
-              <div class="col-md-5">
+              <div class="col-md-4">
                 <h2 class="footer-heading mb-4">Sobre nosotros</h2>
-                <p>Somos una clínica dental con más de 30 años de experiencia en tratamientos generales y ortodónticos. Recientemente incorporamos a nuestras instalaciones equipos de última generación para tratamientos estéticos faciales y corporales.</p>
+                <p>Somos una clínica odontológica ubicada en Concepción con más de 30 años de experiencia en tratamientos generales y de ortodoncia. Recientemente incorporamos a nuestras instalaciones equipos de última generación para tratamientos estéticos faciales y corporales. ¡Ven a conocernos!</p>
               </div>
-              <div class="col-md-3 mx-auto">
+              <div class="col-md-2 mx-auto">
                 <h2 class="footer-heading mb-4">Enlaces</h2>
                 <ul class="list-unstyled">
                   <li><a href="#home-section">Inicio</a></li>
@@ -402,22 +393,36 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
                 </ul>
               </div>
 
+              <div class="col-md-2 mx-auto">
+                <h2 class="footer-heading mb-4">Odontología</h2>
+                <ul class="list-unstyled">
+                  <li>Odontología general</li>
+                  <li>Ortodoncia</li>
+                  <li>Cirugía e implantes</li>
+                  <li>Odontopediatría</li>
+                  <li>Endodoncia</li>
+                  <li>Rehabilitación oral</li>
+                </ul>
+              </div>
 
-            </div>
-          </div>
-          <div class="col-md-4">
-            
-            <div class="">
-              <h2 class="footer-heading mb-4">Redes Sociales</h2>
-                <a href="https://www.instagram.com/brelo.cl/" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                <a href="https://wa.me/56974525931?text=Hola!%20Me%20gustaría%20agendar%20una%20hora" class="pl-3 pr-3"><span class="icon-whatsapp"></span></a>
+              <div class="col-md-2 mx-auto">
+                <h2 class="footer-heading mb-4">Estética</h2>
+                <ul class="list-unstyled">
+                  <li>Plasmage</li>
+                  <li>Toxina botulínica</li>
+                  <li>Mesoterapia facial</li>
+                  <li>Mesoterapia capilar</li>
+                </ul>
+              </div>
 
+              <div class="col-md-2 mx-auto">
+                <div class="">
+                  <h2 class="footer-heading mb-4">Redes Sociales</h2>
+                    <a href="https://www.instagram.com/brelo.cl/" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                    <a href="https://wa.me/56974525931?text=Hola!%20Me%20gustaría%20agendar%20una%20hora" class="pl-3 pr-3"><span class="icon-whatsapp"></span></a>
+                </div>
+              </div>
 
-                
-            </div>
-
-
-          </div>
         </div>
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">

@@ -8,7 +8,41 @@ jQuery(document).ready(function($) {
 
 	"use strict";
 
-	
+	$('#contact-form').on("submit", function(e) {
+
+		var formData = {
+			fname: $("#fname").val(),
+			lname: $("#lname").val(),
+			email: $("#email").val(),
+			subject: $("#subject").val(),
+			message: $("#message").val(),
+			password: $("#password").val(),
+		  };
+		
+		$.ajax({
+			type: "POST",
+			url: '../form.php',
+			dataType: 'json',
+			data: formData,
+		}).done(function (response) {
+			if (response.success) {
+				$('#contact-form').trigger("reset");
+				$("#contact-form").append(
+					'<div class="alert alert-success">' + response.success + '</div>'
+				);
+			} else if (response.error) {
+				$("#contact-form").append(
+					'<div class="alert alert-danger">' + response.error + '</div>'
+				);
+			}
+		}).fail(function (response) {
+			$("#contact-form").append(
+				'<div class="alert alert-danger">Algo salió mal, puedes contactarnos al (+56) 412 223 974.</div>'
+			);
+		});
+
+		e.preventDefault();
+	  });
 
 	var siteMenuClone = function() {
 
@@ -182,8 +216,6 @@ jQuery(document).ready(function($) {
 
 	  });
 
-	  
-	  
 	  $('.custom-prev1').click(function(e) {
 	  	e.preventDefault();
 	  	$('.nonloop-block-13').trigger('prev.owl.carousel');
